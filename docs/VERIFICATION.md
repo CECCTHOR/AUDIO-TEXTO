@@ -63,7 +63,8 @@ see [Actions](https://github.com/CECCTHOR/AUDIO-TEXTO/actions) for current resul
 - Updated checkout to v7.0.1 and setup-python to v7.1.0, pinned to their official
   release commits. Both use Node.js 24.
 - Configured weekly Dependabot proposals for Python dependencies and GitHub
-  Actions. Branch pushes to `main`, pull requests, and manual dispatch run CI;
+  Actions, excluding known-incompatible PyAV versions 19 and above until the
+  transcription dependency is upgraded. Branch pushes to `main`, pull requests, and manual dispatch run CI;
   release tags use the checks already run for their exact commit.
 
 This section records the local release preparation. The release notes link to the

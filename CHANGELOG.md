@@ -12,6 +12,7 @@ First tagged public release.
 - GitHub Actions checks for Windows, macOS, and Linux with Python 3.12 and 3.14.
 - Updated checkout/setup-python actions, pinned to official release commits.
 - Weekly Dependabot update proposals for Python dependencies and GitHub Actions.
+- Excluded incompatible PyAV versions 19 and above from automatic update proposals.
 - PyAV compatibility constraint and a real decoder check for the bundled example.
 - MIT-licensed code and documentation; sample media rights are described separately.
 

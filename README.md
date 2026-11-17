@@ -259,6 +259,9 @@ Dependabot checks Python dependencies and GitHub Actions weekly and proposes
 updates as pull requests. Review each change and its test results before merging.
 Updates are not merged automatically. Release history is recorded in
 [CHANGELOG.md](CHANGELOG.md).
+PyAV versions 19 and above are excluded from proposals while faster-whisper 1.2.1
+uses its older decoder API. Reassess both that exclusion and the requirements
+constraint when upgrading faster-whisper.
 
 ## License
 

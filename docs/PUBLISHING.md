@@ -66,5 +66,7 @@ and known limitations in its notes. GitHub supplies source ZIP and tar archives.
 Release tags do not start another copy of the matrix: branch pushes to `main`, pull
 requests, and manual dispatch remain the workflow triggers. Dependabot proposals
 require review and successful tests; they are not automatically merged.
+PyAV versions 19 and above are ignored until the transcription dependency supports
+their decoder API. Revisit this exclusion when upgrading faster-whisper.
 
 See the official [GitHub import instructions](https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github).
