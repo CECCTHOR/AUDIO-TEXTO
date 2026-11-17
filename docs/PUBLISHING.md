@@ -27,8 +27,8 @@ git diff --cached --stat
 git diff --cached
 ```
 
-The explicit list above avoids blindly staging recordings or a local test environment. Still inspect
-the staged changes for personal information before committing.
+The explicit list above avoids blindly staging recordings or a local test environment.
+Still inspect the staged changes for personal information before committing.
 
 7. Commit and connect your empty remote (replace the placeholder URL):
 
@@ -45,6 +45,8 @@ license without deciding that its terms are appropriate.
 
 ## After publishing
 
+- The initial six Windows, macOS, and Linux jobs passed. See the
+  [verification record](VERIFICATION.md) for the run and scope of those checks.
 - Check the Actions tab for the Windows, macOS, and Linux jobs.
 - Treat remote CI as pending until those jobs actually pass.
 - Download or clone a fresh copy and follow the README on another supported machine.

@@ -1,6 +1,6 @@
 # Verification record
 
-Local verification date: 2026-11-17.
+Verification date: 2026-11-17.
 
 ## Completed locally
 
@@ -25,13 +25,30 @@ Local verification date: 2026-11-17.
   results, bytecode, and virtual environments are ignored; source files and the
   empty input/output placeholders remain publishable.
 
+## Completed on GitHub Actions
+
+The [initial published run](https://github.com/CECCTHOR/AUDIO-TEXTO/actions/runs/44184817452)
+passed all six jobs for commit `c46505a69edfd11f6a2f48dd9879e6a4f657c92d`:
+
+| Runner | Python 3.12 | Python 3.14 |
+| --- | --- | --- |
+| `ubuntu-latest` | Passed | Passed |
+| `macos-latest` | Passed | Passed |
+| `windows-latest` | Passed | Passed |
+
+Each job installed `requirements.txt`, passed `pip check`, imported faster-whisper
+and PyAV, passed the 26 behavior tests, and ran command-line help successfully.
+These checks do not download a Whisper model, process a real recording, or contact
+Google Translate. The real-model integration check described above ran locally on
+Windows. Runner images and resolved transitive dependencies may change over time;
+see [Actions](https://github.com/CECCTHOR/AUDIO-TEXTO/actions) for current results.
+
 ## Not claimed
 
-No macOS or Linux runtime test was performed locally. The GitHub Actions matrix is
-provided for those platforms and has not been run remotely during this preparation.
-CUDA acceleration, all audio codecs, all languages, all Python versions, and every
-CPU architecture have not been tested. The clean environment check validated imports
-and behavior tests; the real model integration check used the existing environment.
+Real-audio transcription on macOS/Linux, CUDA acceleration, all audio codecs, all
+languages, all Python versions, and every CPU architecture have not been tested.
+The clean environment and remote checks validated imports and behavior tests; the
+real model integration check used the existing Windows environment.
 
 Google translation remains an unofficial best-effort service. A successful request
 does not guarantee future availability or linguistic accuracy.

@@ -32,9 +32,11 @@ weights are intentionally not distributed. The original personal workflow is unc
 
 The application is written for cross-platform use, but not every PC or architecture
 is guaranteed to support its native dependencies. Local verification was performed
-on Windows with Python 3.14.7. The CI workflow targets Windows, macOS, and Linux with
-Python 3.12 and 3.14; those remote checks only run after you publish the repository.
-No macOS/Linux runtime verification is claimed by the local Windows test.
+on Windows with Python 3.14.7. GitHub Actions passed on Windows, macOS, and Linux with
+Python 3.12 and 3.14 on 2026-11-17. These six checks install dependencies, verify
+imports, run the behavior tests, and check command-line help. They do not download
+a model or transcribe real audio. See the [verification record](docs/VERIFICATION.md)
+for the recorded run and the Tests badge above for the latest result.
 
 Audio decoding uses PyAV. Its usual binary wheels bundle FFmpeg libraries, so a
 separate FFmpeg command is not normally needed. Source builds and unusual formats
