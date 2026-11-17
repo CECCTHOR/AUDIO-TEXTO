@@ -8,7 +8,7 @@ First tagged public release.
 - Optional online translation, explicit provider errors, and resumable checkpoints.
 - Plain text, timestamped text, and JSON exports with overwrite protection.
 - Windows PowerShell and macOS/Linux Bash launchers.
-- Audio 46 demonstration recording, generated results, and reproduction commands.
+- Audio 46 demonstration recording, English/Spanish results, and reproduction commands.
 - GitHub Actions checks for Windows, macOS, and Linux with Python 3.12 and 3.14.
 - Updated checkout/setup-python actions, pinned to official release commits.
 - Weekly Dependabot update proposals for Python dependencies and GitHub Actions.

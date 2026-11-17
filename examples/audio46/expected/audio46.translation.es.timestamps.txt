@@ -1,24 +1,24 @@
-﻿[00:00:01.520 -> 00:00:06.520] [TRANSLATION SKIPPED]
-[00:00:06.520 -> 00:00:13.520] [TRANSLATION SKIPPED]
-[00:00:13.520 -> 00:00:17.520] [TRANSLATION SKIPPED]
-[00:00:17.520 -> 00:00:20.520] [TRANSLATION SKIPPED]
-[00:00:20.520 -> 00:00:24.520] [TRANSLATION SKIPPED]
-[00:00:24.520 -> 00:00:32.520] [TRANSLATION SKIPPED]
-[00:00:32.520 -> 00:00:37.520] [TRANSLATION SKIPPED]
-[00:00:37.520 -> 00:00:41.520] [TRANSLATION SKIPPED]
-[00:00:41.520 -> 00:00:48.520] [TRANSLATION SKIPPED]
-[00:00:48.520 -> 00:00:52.520] [TRANSLATION SKIPPED]
-[00:00:52.520 -> 00:00:57.520] [TRANSLATION SKIPPED]
-[00:00:57.520 -> 00:01:05.520] [TRANSLATION SKIPPED]
-[00:01:05.520 -> 00:01:10.520] [TRANSLATION SKIPPED]
-[00:01:10.520 -> 00:01:15.520] [TRANSLATION SKIPPED]
-[00:01:15.520 -> 00:01:23.520] [TRANSLATION SKIPPED]
-[00:01:23.520 -> 00:01:29.520] [TRANSLATION SKIPPED]
-[00:01:29.520 -> 00:01:34.520] [TRANSLATION SKIPPED]
-[00:01:34.520 -> 00:01:37.520] [TRANSLATION SKIPPED]
-[00:01:37.520 -> 00:01:41.520] [TRANSLATION SKIPPED]
-[00:01:41.520 -> 00:01:45.520] [TRANSLATION SKIPPED]
-[00:01:45.520 -> 00:01:49.520] [TRANSLATION SKIPPED]
-[00:01:49.520 -> 00:01:54.520] [TRANSLATION SKIPPED]
-[00:01:54.520 -> 00:01:57.520] [TRANSLATION SKIPPED]
-[00:01:57.520 -> 00:01:59.520] [TRANSLATION SKIPPED]
+﻿[00:00:01.520 -> 00:00:06.520] Entonces te mudas a Praga. Pero pensé que te gustaba vivir aquí.
+[00:00:06.520 -> 00:00:13.520] Sí. Pero si Miguel y yo nos casamos, quiero que sepa algo de mi país.
+[00:00:13.520 -> 00:00:17.520] Y para comprender la cultura, el idioma, etc.
+[00:00:17.520 -> 00:00:20.520] ¿No puedes simplemente irte de vacaciones?
+[00:00:20.520 -> 00:00:24.520] No se aprende mucho de nuestras vacaciones, Carlos. No.
+[00:00:24.520 -> 00:00:32.520] Hemos decidido irnos dos o tres años y luego ver dónde preferimos vivir y formar una familia.
+[00:00:32.520 -> 00:00:37.520] Bueno. Pero el coste de vida en Praga es muy alto, ¿no?
+[00:00:37.520 -> 00:00:41.520] No mucho más alto que aquí en Argentina.
+[00:00:41.520 -> 00:00:48.520] Además, el desempleo ha disminuido allí en los últimos años y es más bajo que aquí.
+[00:00:48.520 -> 00:00:52.520] Entonces, creo que encontraremos trabajo con bastante facilidad.
+[00:00:52.520 -> 00:00:57.520] Pero la economía está mejorando aquí ahora. Y te pagan bastante bien, ¿no?
+[00:00:57.520 -> 00:01:05.520] Sí, Carlos. No es que no me guste aquí. Soy feliz y tengo una buena calidad de vida.
+[00:01:05.520 -> 00:01:10.520] Pero las cosas son cada vez más caras y no es fácil comprar una casa aquí.
+[00:01:10.520 -> 00:01:15.520] En la República Checa los precios de la vivienda son generalmente más baratos, al igual que los coches.
+[00:01:15.520 -> 00:01:23.520] Quizás salir a comer aquí sea más barato. Y como me dijiste, aquí no hay nada mejor que la vida nocturna.
+[00:01:23.520 -> 00:01:29.520] Verdadero. Pero estoy pensando más en el futuro. Los salarios son más altos en Praga.
+[00:01:29.520 -> 00:01:34.520] Me podrían pagar más por hacer el mismo trabajo que hago ahora.
+[00:01:34.520 -> 00:01:37.520] ¿Crees que a Miguel le gustará allí?
+[00:01:37.520 -> 00:01:41.520] No tengo ni idea. Por eso quiero que lo pruebe.
+[00:01:41.520 -> 00:01:45.520] No te preocupes Carlos. No vas a perder a tu mejor amigo.
+[00:01:45.520 -> 00:01:49.520] Simplemente creo que es importante para nosotros ver dónde somos ambos más felices.
+[00:01:49.520 -> 00:01:54.520] Y no podemos hacer eso si no intentamos vivir en ambos países.
+[00:01:54.520 -> 00:01:57.520] De todos modos, puedes venir a visitarnos.
+[00:01:57.520 -> 00:01:59.520] Sí, supongo que tienes razón.

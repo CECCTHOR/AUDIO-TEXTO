@@ -21,9 +21,10 @@ def main() -> None:
     assert metadata["input_file"] == recording.name
     assert metadata["detected_language"] == "en" and metadata["target_language"] == "es"
     assert metadata["segment_count"] == len(rows)
-    assert metadata["translation_complete"] is False
+    assert metadata["translation_complete"] is True
     assert metadata["translation_failed_count"] == 0
-    assert all(row.translation_status == "skipped" for row in rows)
+    assert all(row.translation_status == "complete" and row.translation.strip()
+               and row.translation_error is None for row in rows)
 
     # This exercises faster-whisper's actual PyAV call, not just dependency imports.
     audio = decode_audio(str(recording), sampling_rate=16000)

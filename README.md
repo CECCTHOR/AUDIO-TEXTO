@@ -132,18 +132,20 @@ current working directory, even when a launcher is invoked from another folder.
 ## Try the included example
 
 The [Audio 46 example](examples/audio46/README.md) includes a two-minute recording,
-24 recognized segments, and all five generated output files. Its reference results
-were produced on Windows with translation disabled. Translation files deliberately
-contain `[TRANSLATION SKIPPED]` markers, so reproducing it requires no translator.
+24 recognized segments, and all five generated output files, including the Spanish
+translation. Its English transcription was produced locally on Windows, then its
+checkpoint was resumed to translate the text through Google Translate.
 
 After installation, try it in PowerShell:
 
 ```powershell
-.\.venv\Scripts\python.exe transcribe_translate.py examples/audio46/audio46.ogg --no-translate --output-dir output/audio46
+.\.venv\Scripts\python.exe transcribe_translate.py examples/audio46/audio46.ogg --output-dir output/audio46
 ```
 
-On macOS/Linux, use `.venv/bin/python` as the interpreter. The model downloads on
-first use; after caching it, add `--local-files-only` for offline operation.
+On macOS/Linux, use `.venv/bin/python` as the interpreter. This command translates
+online. Add `--no-translate` for local transcription with skipped translation markers.
+The model downloads on first use; after caching it, add both `--no-translate` and
+`--local-files-only` for offline operation.
 See the example README for recorded versions, comparison details, and sample rights.
 
 ## Offline and other languages

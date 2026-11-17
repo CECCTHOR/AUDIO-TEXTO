@@ -53,8 +53,9 @@ see [Actions](https://github.com/CECCTHOR/AUDIO-TEXTO/actions) for current resul
   PyAV 18.1.0 successfully decoded the complete bundled recording.
 - Generated all five Audio 46 reference exports from the full recording using
   cached `small.en`, CPU `int8`, and `--no-translate --local-files-only`.
-  The result contains 24 segments and skipped translation statuses. No transcript
-  was submitted to Google to generate the bundled example.
+  The result contains 24 segments. Resumed the generated checkpoint through Google
+  Translate afterward: all 24 Spanish translations completed, with zero failures.
+  Only transcript text was submitted to Google; the audio was processed locally.
 - Recorded the input hash, model revision, dependency versions, and reproduction
   commands in [the example README](../examples/audio46/README.md).
 - Added a decoder/export smoke check that loads no model and uses no network.
