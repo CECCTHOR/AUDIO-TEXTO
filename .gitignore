@@ -42,3 +42,11 @@ models/
 Thumbs.db
 .idea/
 .vscode/
+
+# Explicitly published example; other recordings and results remain ignored.
+!examples/audio46/audio46.ogg
+!examples/audio46/expected/audio46.transcript.en.txt
+!examples/audio46/expected/audio46.transcript.en.timestamps.txt
+!examples/audio46/expected/audio46.translation.es.txt
+!examples/audio46/expected/audio46.translation.es.timestamps.txt
+!examples/audio46/expected/audio46.metadata.json

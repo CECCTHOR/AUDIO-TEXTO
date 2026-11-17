@@ -1,0 +1,210 @@
+﻿{
+  "detected_language": "en",
+  "language_probability": 1,
+  "duration_seconds": 123.1735,
+  "model": "small.en",
+  "device": "cpu",
+  "compute_type": "int8",
+  "schema_version": 1,
+  "script_version": "1.0.0",
+  "input_file": "audio46.ogg",
+  "target_language": "es",
+  "segment_count": 24,
+  "segments": [
+    {
+      "start": 1.52,
+      "end": 6.52,
+      "text": "So, you're moving to Prague. But I thought you liked living here.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 6.52,
+      "end": 13.52,
+      "text": "I do. But if Miguel and I get married, I want him to know something about my country.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 13.52,
+      "end": 17.52,
+      "text": "And to understand the culture, the language and so on.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 17.52,
+      "end": 20.52,
+      "text": "Can't you just go for a holiday?",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 20.52,
+      "end": 24.52,
+      "text": "You don't learn much from our holiday, Carlos. No.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 24.52,
+      "end": 32.52,
+      "text": "We've decided to go for two or three years and then see where we prefer to live and bring up a family.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 32.52,
+      "end": 37.52,
+      "text": "Okay. But the cost of living is really high in Prague, isn't it?",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 37.52,
+      "end": 41.52,
+      "text": "Not much higher than it is here in Argentina.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 41.52,
+      "end": 48.52,
+      "text": "Also, unemployment has fallen there in the last few years and is lower than it is here.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 48.52,
+      "end": 52.52,
+      "text": "So, I think we'll find jobs fairly easily.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 52.52,
+      "end": 57.52,
+      "text": "But the economy is doing better here now, though. And you get paid quite well, don't you?",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 57.52,
+      "end": 65.52,
+      "text": "Yes, Carlos. It's not that I don't like it here. I'm happy and have a good quality of life.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 65.52,
+      "end": 70.52,
+      "text": "But things are getting more expensive and it's not easy to buy a house here.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 70.52,
+      "end": 75.52,
+      "text": "In the Czech Republic, house prices are generally cheaper and so are cars.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 75.52,
+      "end": 83.52,
+      "text": "Perhaps our eating out is cheaper here. And as you told me, you can't beat the nightlife here.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 83.52,
+      "end": 89.52,
+      "text": "True. But I'm thinking more of the future. The salaries are higher in Prague.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 89.52,
+      "end": 94.52,
+      "text": "I could get paid more for doing the same job as I'm doing now.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 94.52,
+      "end": 97.52,
+      "text": "Do you think Miguel will like it there?",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 97.52,
+      "end": 101.52,
+      "text": "I have no idea. That's why I want him to try it.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 101.52,
+      "end": 105.52,
+      "text": "Don't worry, Carlos. You're not going to lose your best friend.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 105.52,
+      "end": 109.52,
+      "text": "I just think it's important for us to see where we are both happier.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 109.52,
+      "end": 114.52,
+      "text": "And we can't do that if we don't try living in both countries.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 114.52,
+      "end": 117.52,
+      "text": "Anyway, you can come and visit.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    },
+    {
+      "start": 117.52,
+      "end": 119.52,
+      "text": "Yeah, I suppose you're right.",
+      "translation": "",
+      "translation_status": "skipped",
+      "translation_error": null
+    }
+  ],
+  "translation_complete": false,
+  "translation_failed_count": 0,
+  "updated_at_utc": "2026-11-17T22:32:45.755963+00:00"
+}

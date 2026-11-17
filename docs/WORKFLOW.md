@@ -33,4 +33,5 @@ This repository removes hard-coded personal paths and the unused deep-translator
 dependency. Output defaults to the input directory. Translation failures are visible,
 the transcript is saved first, and existing results require explicit overwrite.
 New metadata includes versioned statuses and can be moved between computers.
-The original AUDIO 1-40 collection is not bundled or modified.
+The original audio collection is not modified. A separate copy of the selected
+Audio 46 recording is bundled in `examples/audio46` with local example results.

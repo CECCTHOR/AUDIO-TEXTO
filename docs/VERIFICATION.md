@@ -16,7 +16,7 @@ Verification date: 2026-11-17.
 - The cached `small.en` CPU model transcribed 12 seconds of an existing recording
   using the new script in the existing transcription environment. The integration
   check verified three nonempty segments, all five exports, and checkpoint reload.
-- Temporary audio and integration outputs were removed. No recording is bundled.
+- Temporary audio and integration outputs from that initial check were removed.
 - A live Google translation request for the synthetic sentence
   "The house has a small garden." returned the expected Spanish translation.
   The sandbox initially blocked the network request; the permitted network run passed.
@@ -43,6 +43,32 @@ Google Translate. The real-model integration check described above ran locally o
 Windows. Runner images and resolved transitive dependencies may change over time;
 see [Actions](https://github.com/CECCTHOR/AUDIO-TEXTO/actions) for current results.
 
+## Version 1.0.0 example and maintenance checks
+
+- Created a standalone project environment on Windows with Python 3.14.7 and
+  installed the complete requirements. Faster-whisper 1.2.1 remains the latest
+  published version checked for this release.
+- A real decoder call exposed incompatibility between faster-whisper 1.2.1 and
+  PyAV 19: `metadata_errors` was removed. Requirements now constrain PyAV below 19;
+  PyAV 18.1.0 successfully decoded the complete bundled recording.
+- Generated all five Audio 46 reference exports from the full recording using
+  cached `small.en`, CPU `int8`, and `--no-translate --local-files-only`.
+  The result contains 24 segments and skipped translation statuses. No transcript
+  was submitted to Google to generate the bundled example.
+- Recorded the input hash, model revision, dependency versions, and reproduction
+  commands in [the example README](../examples/audio46/README.md).
+- Added a decoder/export smoke check that loads no model and uses no network.
+  The updated CI workflow runs it in addition to the 26 existing behavior tests.
+- Updated checkout to v7.0.1 and setup-python to v7.1.0, pinned to their official
+  release commits. Both use Node.js 24.
+- Configured weekly Dependabot proposals for Python dependencies and GitHub
+  Actions. Branch pushes to `main`, pull requests, and manual dispatch run CI;
+  release tags use the checks already run for their exact commit.
+
+This section records the local release preparation. The release notes link to the
+completed CI run for the tagged commit. Decoder validation is not a real-model
+transcription test on macOS/Linux.
+
 ## Not claimed
 
 Real-audio transcription on macOS/Linux, CUDA acceleration, all audio codecs, all
@@ -59,6 +85,7 @@ After installation, use your project's environment interpreter in place of `pyth
 
 ```bash
 python -m unittest discover -s tests -v
+python tests/example_smoke.py
 python -m pip check
 python transcribe_translate.py --help
 ```

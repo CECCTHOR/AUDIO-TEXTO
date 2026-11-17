@@ -21,7 +21,7 @@ archive and unrelated projects outside the new repository.
 
 ```bash
 git init -b main
-git add LICENSE README.md requirements.txt transcribe_translate.py setup_environment.py run.ps1 run.sh .gitignore .gitattributes .github docs tests input/.gitkeep output/.gitkeep
+git add LICENSE README.md CHANGELOG.md requirements.txt transcribe_translate.py setup_environment.py run.ps1 run.sh .gitignore .gitattributes .github docs tests examples input/.gitkeep output/.gitkeep
 git status --short
 git diff --cached --stat
 git diff --cached
@@ -51,7 +51,20 @@ license without deciding that its terms are appropriate.
 - Treat remote CI as pending until those jobs actually pass.
 - Download or clone a fresh copy and follow the README on another supported machine.
 - Keep recordings and results local. The empty `input/` and `output/` directories
-  are placeholders for users' own data.
+  are placeholders for users' own data; the explicitly selected Audio 46 sample is
+  published separately in `examples/audio46`.
 - Never commit `.venv`, cached model weights, credentials, or personal transcripts.
+
+## Publish a version
+
+Use the program version from `transcribe_translate.py`, update `CHANGELOG.md`, and
+push the reviewed changes to `main`. Wait for all six CI jobs for that exact commit
+to pass, then create an annotated tag such as `v1.0.0` and push it. Create the GitHub
+release from that existing tag, with the changes, example details, verification run,
+and known limitations in its notes. GitHub supplies source ZIP and tar archives.
+
+Release tags do not start another copy of the matrix: branch pushes to `main`, pull
+requests, and manual dispatch remain the workflow triggers. Dependabot proposals
+require review and successful tests; they are not automatically merged.
 
 See the official [GitHub import instructions](https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github).

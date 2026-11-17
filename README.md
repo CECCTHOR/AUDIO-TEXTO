@@ -16,10 +16,12 @@ language. All code, messages, and project documentation are in English.
 - Saved transcripts before translation, resumable translation, and overwrite protection.
 - Windows PowerShell and macOS/Linux Bash launchers.
 - Automated tests and a GitHub Actions workflow.
+- An [Audio 46 example](examples/audio46/README.md) with a recording and generated results.
 
 This folder is a standalone distribution of an earlier personal audio workflow.
-Personal recordings, transcripts, exercise images, installed environments, and model
-weights are intentionally not distributed. The original personal workflow is unchanged.
+The documented Audio 46 sample and its generated results are included as an example.
+Other recordings, transcripts, exercise images, installed environments, and model
+weights are not distributed. The original personal workflow is unchanged.
 
 ## Requirements and compatibility
 
@@ -33,8 +35,9 @@ weights are intentionally not distributed. The original personal workflow is unc
 The application is written for cross-platform use, but not every PC or architecture
 is guaranteed to support its native dependencies. Local verification was performed
 on Windows with Python 3.14.7. GitHub Actions passed on Windows, macOS, and Linux with
-Python 3.12 and 3.14 on 2026-11-17. These six checks install dependencies, verify
-imports, run the behavior tests, and check command-line help. They do not download
+Python 3.12 and 3.14 on 2026-11-17. The current workflow installs dependencies,
+verifies imports, decodes the bundled sample, checks its exports, runs behavior
+tests, and checks command-line help. It does not download
 a model or transcribe real audio. See the [verification record](docs/VERIFICATION.md)
 for the recorded run and the Tests badge above for the latest result.
 
@@ -42,11 +45,15 @@ Audio decoding uses PyAV. Its usual binary wheels bundle FFmpeg libraries, so a
 separate FFmpeg command is not normally needed. Source builds and unusual formats
 may require additional platform dependencies. See the
 [faster-whisper documentation](https://github.com/SYSTRAN/faster-whisper).
+PyAV is constrained below version 19 to preserve compatibility with faster-whisper
+1.2.1's audio decoder. Install the complete `requirements.txt`, not faster-whisper alone.
 
 ## Installation
 
 Download or clone this repository, then open a terminal **inside this folder**.
 Do not copy `.venv` from another computer: create a new environment on each machine.
+For a versioned snapshot, download a source archive from
+[Releases](https://github.com/CECCTHOR/AUDIO-TEXTO/releases).
 
 ```bash
 git clone https://github.com/CECCTHOR/AUDIO-TEXTO.git
@@ -121,6 +128,23 @@ bash run.sh "input/sample.mp4" --output-dir output
 If PowerShell blocks `.ps1` files, use the direct Python command above. No system
 execution-policy change is needed. Relative input/output paths refer to your
 current working directory, even when a launcher is invoked from another folder.
+
+## Try the included example
+
+The [Audio 46 example](examples/audio46/README.md) includes a two-minute recording,
+24 recognized segments, and all five generated output files. Its reference results
+were produced on Windows with translation disabled. Translation files deliberately
+contain `[TRANSLATION SKIPPED]` markers, so reproducing it requires no translator.
+
+After installation, try it in PowerShell:
+
+```powershell
+.\.venv\Scripts\python.exe transcribe_translate.py examples/audio46/audio46.ogg --no-translate --output-dir output/audio46
+```
+
+On macOS/Linux, use `.venv/bin/python` as the interpreter. The model downloads on
+first use; after caching it, add `--local-files-only` for offline operation.
+See the example README for recorded versions, comparison details, and sample rights.
 
 ## Offline and other languages
 
@@ -216,21 +240,31 @@ publishing. Ignoring a file does not protect a file that was already committed.
 
 ```bash
 python -m unittest discover -s tests -v
+python tests/example_smoke.py
 python -m pip check
 ```
 
 Unit tests run without downloading a model or contacting a translator. They cover
 network failures, rate limiting, output consistency, resume behavior, and overwrite
-protection. GitHub Actions also installs dependencies and checks their imports.
+protection. The example check decodes the bundled recording and validates its
+exports without loading a model or contacting a translator. GitHub Actions runs
+both checks after installing dependencies and checking their imports.
 An optional local integration check is described in [docs/VERIFICATION.md](docs/VERIFICATION.md).
 See [docs/WORKFLOW.md](docs/WORKFLOW.md) for the processing procedure and
 [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) for common problems.
+
+Dependabot checks Python dependencies and GitHub Actions weekly and proposes
+updates as pull requests. Review each change and its test results before merging.
+Updates are not merged automatically. Release history is recorded in
+[CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
 Copyright (c) 2026 CECCTHOR. This project's code and documentation are available
 under the [MIT License](LICENSE). Dependencies and downloaded model weights keep
 their own licenses.
+The example recording and its transcribed/translated content are outside this MIT
+grant; see the [sample notice](examples/audio46/NOTICE.md).
 
 ## Publishing and maintenance
 
