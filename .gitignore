@@ -1,0 +1,44 @@
+# Local Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Recordings, generated results, logs, and downloaded models
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+*.mp4
+*.ogg
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.aac
+*.webm
+*.mov
+*.mkv
+*.wma
+*.opus
+*.transcript.*.txt
+*.translation.*.txt
+*.metadata.json
+*.log
+models/
+.cache/
+
+# Machine settings and secrets
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

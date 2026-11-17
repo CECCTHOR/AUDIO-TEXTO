@@ -1,0 +1,2 @@
+# Tested top-level dependency. Transitive versions are resolved by pip per platform.
+faster-whisper==1.2.1
