@@ -3,9 +3,12 @@
 [![Tests](https://github.com/CECCTHOR/AUDIO-TEXTO/actions/workflows/tests.yml/badge.svg)](https://github.com/CECCTHOR/AUDIO-TEXTO/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
+[English reference](README.md) | [Guía rápida en español](README.es.md)
+
 Transcribe audio/video locally with faster-whisper and optionally translate the
 transcript into Spanish using Google Translate. English is the default source
-language. All code, messages, and project documentation are in English.
+language. Code, command-line messages, and the full reference documentation are in
+English; a [Spanish quickstart](README.es.md) is also available.
 
 ## What is included
 
@@ -262,6 +265,14 @@ Updates are not merged automatically. Release history is recorded in
 PyAV versions 19 and above are excluded from proposals while faster-whisper 1.2.1
 uses its older decoder API. Reassess both that exclusion and the requirements
 constraint when upgrading faster-whisper.
+
+## Report a problem
+
+Use the [bug report form](https://github.com/CECCTHOR/AUDIO-TEXTO/issues/new?template=bug_report.yml)
+to describe a problem in English or Spanish. Include your operating system, Python
+version, the command you ran, and the expected and actual behavior. Add relevant
+error output when available. Reports are public: remove private paths, transcript
+content, credentials, and personal information before submitting.
 
 ## License
 

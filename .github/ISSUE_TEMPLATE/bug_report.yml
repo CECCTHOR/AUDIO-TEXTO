@@ -1,0 +1,77 @@
+name: Reportar un error / Bug report
+description: Describe un problema y cómo reproducirlo. / Describe a problem and how to reproduce it.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Puedes escribir en español o inglés. / You can write in Spanish or English.
+
+        Los reportes son públicos. Elimina datos personales, rutas privadas, credenciales y contenido privado de grabaciones.
+        Reports are public. Remove personal information, private paths, credentials, and private recording content.
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Sistema operativo / Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Otro / Other
+    validations:
+      required: true
+  - type: input
+    id: python-version
+    attributes:
+      label: Versión de Python / Python version
+      description: Usa py --version, python --version o python3 --version. / Use --version; if unavailable, say so.
+      placeholder: 3.14.7; o no disponible / unavailable
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: Versión de Audio Texto / Audio Texto version
+      description: Versión descargada o salida de transcribe_translate.py --version. / Downloaded release or app --version output.
+      placeholder: v1.0.0; main con commit / main with commit
+    validations:
+      required: false
+  - type: textarea
+    id: command
+    attributes:
+      label: Comando utilizado / Command used
+      description: Conserva las opciones y sustituye las rutas privadas por ejemplos. / Keep the flags and replace private paths with examples.
+      placeholder: python transcribe_translate.py "input/sample.ogg" --no-translate --output-dir output
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Qué ocurrió y qué esperabas / Actual and expected behavior
+      description: Incluye los pasos para repetirlo y la versión de tu sistema si la conoces. / Include reproduction steps and your OS version if known.
+      placeholder: |
+        Pasos / Steps:
+        1.
+
+        Esperaba / Expected:
+
+        Ocurrió / Actual:
+    validations:
+      required: true
+  - type: textarea
+    id: error-output
+    attributes:
+      label: Mensaje de error o salida relevante / Error message or relevant output
+      description: Copia la parte relevante, sin información privada. / Paste the relevant part without private information.
+      render: text
+    validations:
+      required: false
+  - type: input
+    id: model-settings
+    attributes:
+      label: Modelo y opciones, si las conoces / Model and options, if known
+      placeholder: small.en, CPU int8, --language en --target-lang es
+    validations:
+      required: false

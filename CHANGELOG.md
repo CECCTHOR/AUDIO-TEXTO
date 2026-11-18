@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Added a Spanish quickstart linked from the English reference README.
+- Added a bilingual bug report form with environment and reproduction details.
+- Added repository topics for Python and audio transcription discovery.
+
 ## [1.0.0] - 2026-11-17
 
 First tagged public release.
